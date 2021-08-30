@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <script type="text/javascript" src="js/principal.js"></script>
+
+
+  <title>pontos turisticos</title>
+</head>
+<body class="branco" id="mode">
+
+  <header>
+     <div class="nav" >
+        <h2 class="nav-link title">Pontos turisticos </h2>
+        <a href="#"  onclick="modDark()"><i class="fas fa-adjust" class="nav-link"></i></a>
+        <a href="#ancoraviagens" class="btnjs nav-link" onmouseenter="mouse()" id="btn01" onmouseleave="mousefora()" >Nossas Locomoções</a>
+        <a href="#ancoraContato"class="btnjs nav-link" onmouseenter="mouse2()" id="btn02" onmouseleave="mousefora2()">Contato</a>
+        <a href="login.html"class="btnjs nav-link" onmouseenter="mouse3()" id="btn03" onmouseleave="mousefora3()">Login</a>
+     </div>
+  </header>
+  <main>
+          <h3>Lugares mais visitados</h3>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 imgC" src="img/rome-5074421_1280.jpg" height="550px" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>ROMA</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 imgC" src="img/paris-1836415_1280 (1).jpg" height="550px"  alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>PARIS</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 imgC" src="img/dubai (2).jpg" height="550px" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>DUBAI</h4>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+          <!----------------------aqui começa os meios de locomoção cardes ------------------------------>
+        
+            <h3 id="ancoraviagens">Nossos meios de locomoção</h3>
+            <div class="cards" >
+                  <div class="card1" >
+                        <img src="img/icons8-carro-50 (1).png"  height="80px" alt="" class="carro" >
+                        <h4>Carro</h4>
+                        <p>Oferecemos nossos Carros<br> para alugar ou caso prefira<br> temos motoristas que podem<br>  dirigir por você.</p> 
+                  </div>
+                  <div class="card2">
+                      
+                        <img src="img/icons8-avião-pousando-50.png" height="80px" alt="">
+                        <h4>Avião</h4>
+                        <p>Oferecemos otimas promoções<br> De passagens de avião ou<br> se preferir temos nossa<br> propria linha aérea!</p>
+                    
+                  </div>
+                  <div class="card3">
+                    
+                      <img src="img/icons8-navio-de-cruzeiro-50.png" height="80px" alt="">
+                      <h4>Cruzeiro</h4>
+                      <p>Já imaginou fazer um cruzeiro<br> dos sonhos, por um bom preço?<br> Com a gente você consegue!.</p>
+                  
+                </div>
+                <div class="card4">
+                  
+                    <img src="img/icons8-bicicleta-64.png" height="80px" alt="">
+                    <h4>Bicicletas</h4>
+                    <p>Temos disponiveis em varios <br> Lugares do Brasil, Canada <br> e Estados unidos<br> bicicletas para alugar</p>
+              
+              </div>
+              <div class="card5">
+              
+                  <img src="img/icons8-capacete-de-moto-64.png" height="80px" alt="">
+                  <h4>Motos</h4>
+                  <p>Oferecemos nossas motos<br> para alugar ou caso prefira<br> temos motoristas que podem<br> pilotar por você.</p>
+              
+            </div>
+            <div class="card6">
+                <img src="img/icons8-scooter-pontapé-80.png" height="80px" alt="">
+                <h4>Patinetes</h4>
+                <p>Temos disponiveis em varios <br> lugares do Brasil,  e Canada<br> Patinetes <br>elétricos para alugar</p>
+            </div>
+              
+        </div>
+          
+        
+        <!----------------------aqui começa pontos famosos------------------->
+        <div class="pontosFamosos" >
+            <h3>Pontos Famosos</h3>
+            <div class="cardes">
+                  <div class="ponto1 "  id="pCard" data-anime="left">
+                    <div class="col-md-4">
+                      <div class="card" style="width: 19rem;">
+                        <img class="card-img-top" src="img/santorini-1404852_1280.jpg"  alt="Imagem de capa do card" onmouseenter="entra()" >
+                        <div class="card-body">
+                          <h3>Santorini</h3>
+                          <p class="card-tex">Santorini, na Grécia, está entre os mais charmosos destinos da Europa e a ilha é parada quase obrigatória de quem visita o país pela primeira vez. Famosa pelo visual cercado de casinhas brancas pontuadas por igrejas de domos azuis.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ponto2">
+                    <div class="col-md-4">
+                      <div class="card" style="width: 19rem;">
+                        <img class="card-img-top" src="img/rio-de-janeiro-1534128_1280.jpg" height="214px" alt="Imagem de capa do card">
+                        <div class="card-body">
+                          <h3>Rio de janeiro</h3>
+                          <p class="card-text">Com inúmeras praias, belíssimas montanhas e o samba e a bossa nova ao fundo, é fácil se apaixonar pelo Rio de Janeiro. Imortalizada em uma canção, a praia de Ipanema continua sendo o lugar perfeito para caminhar...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ponto3 " data-anime="rignt">
+                    <div class="col-md-4">
+                      <div class="card" style="width: 19rem;">
+                        <img class="card-img-top" src="img/city-4364408_1280.jpg"  alt="Imagem de capa do card">
+                        <div class="card-body">
+                          <h3>Veneza</h3>
+                          <p class="card-text">É impossível ficar indiferente a Veneza. As construções, os canais, as ruelas, as igrejas, os monumentos: cada passo revela uma história a ser descoberta, um novo mistério a ser revelado, um romance a ser vivido.
+
+                            Eleita inúmeras vezes a cidade mais bela do mundo.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+        </div>
+        <!----------------------------------area de contato------------------------------->
+      
+  <form class="formPrincipal" name="formCliente" id="ancoraContato" onsubmit="return validarcampo()" action="#">
+    <div id="tituloContato">
+      <h3>Entre em contato</h3>
+    </div>
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="">Nome:</label>
+            <input type="text" name="nome" id="inputNome" placeholder="Digite seu nome" >
+        </div>
+        <div class="campo"> 
+          <label for="">sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenomes" placeholder="Digite seu sobrenome">
+        </div>
+    </fieldset>
+    <div class="campo">
+      <label for="">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Digite seu email">
+    </div>
+<br>
+    <div class="campo">
+      <label for="">Digite sua mensagem</label>
+      <textarea name="msg" id="msg" cols="40" rows="6" placeholder="Digite sua mensagem"></textarea>
+    </div>
+    <div class="">
+      <label for="">Qual seu sexo: </label>
+      <label for="">
+        <input type="radio" name="sexo" id="sexo" checked>Masculino
+      </label>
+      <label for="">
+        <input type="radio" name="sexo" id="sexo">Feminino
+      </label>
+    </div>
+    <input class="btn" type="submit"></input>
+  </form>
+          <!-----------------------aqui começa a sessão sobre nós ------------------------>
+   <div class="sobre" id="ancoraSobre">
+       <h3>Sobre nós</h3>
+       <p>Somos uma empresa de turismo há mais de 10 anos no mercado, nossa sede principal reside no brasil,<br> Mas tambem estamos cituados no Canada e no Estados Unidos, neste site você ira encontrar pontos turisticos<br> famosos, a media dos preços para realizar cada viagem e muito mais. Se cadastre gratuitamente no nosso site<br> para seguir tendo informações sobre como fazer viagens para os locais mais belos do mundo!</p>
+         
+   </div>
+      <!-----------------------rodape------------------------>
+      <footer>
+        <div id="txt">
+          <p>Desenvolvido por: Marcos Felipe Silva Celestino</p>
+          
+          <p>Email para contato: marcosfelipehd3@gmail.com</p>
+      </div>
+      <div class="icons">
+        <a href="https://github.com/Mxrcos999" target="_blank"> <i class="fab fa-github"></i></a> 
+        <a href="https://www.linkedin.com/in/marcos-felipe-2528a5158/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      </footer>
+  </main>
+
+<script src="https://kit.fontawesome.com/cee53a58f8.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
